@@ -1,0 +1,30 @@
+:root {
+    --verde-spotify: rgb(1, 216, 86);
+    --cinza-claro: rgb(225, 229, 235);
+    --cinza1: rgb(62, 66, 75);
+    --cinza2: rgb(40, 42, 47);
+    --cinza3: rgb(30, 31, 36);
+    --cinza4: rgb(26, 27, 28);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--cinza-claro);
+    font-family: Montserrat, sans-serif;
+    background-color: var(--cinza4);
+
+}
+
+h1 {
+    color: var(--verde-spotify);
+}
+
+header {
+    flex: content;
+    
+}
