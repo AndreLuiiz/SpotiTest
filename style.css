@@ -65,10 +65,35 @@ main .parts .part {
 }
 
 .genres-cards .genre:hover{
-  background-color: var(--cinza2);
+  background-color: var(--verde-spotify);
 }
 
 .genres-cards .genre img {
   width: 100px;
   margin-bottom: 20px;
+}
+
+.playlist-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.music-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.text-card{
+  background-color: var(--cinza2);
+  border-radius: 30px;
+  padding: 10px;
+  margin: 3px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.text-card:hover {
+  background-color: var(--verde-spotify);
 }
