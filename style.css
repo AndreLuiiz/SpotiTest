@@ -65,7 +65,7 @@ main .parts .part {
 }
 
 .genres-cards .genre:hover{
-  background-color: var(--verde-spotify);
+  background-color: var(--cinza2);
 }
 
 .genres-cards .genre img {
@@ -96,4 +96,5 @@ main .parts .part {
 
 .text-card:hover {
   background-color: var(--verde-spotify);
+  color: var(--cinza2);
 }
