@@ -98,3 +98,8 @@ main .parts .part {
   background-color: var(--verde-spotify);
   color: var(--cinza2);
 }
+
+.genre-selected {
+  background-color: var(--cinza1) !important;
+  border: 2px solid var(--cinza2);
+}
