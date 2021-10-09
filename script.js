@@ -2,10 +2,10 @@ const CLIENT_ID = '3688b6a29c6845fb836fa742df4f0eb6';
 const CLIENT_SECRET = 'b435b3b39ab94c868ad5ee8b0fc42ae3';
 const ID_AND_SECRET = `${CLIENT_ID}:${CLIENT_SECRET}`;
 const HEADER_PARAMETER = `Basic ${btoa(ID_AND_SECRET)}`;
-const URL_BASE = 'https://api.spotify.com/v1/';
+const URL_BASE = 'https://accounts.spotify.com/api/'
 let token;
 
-// API
+
 async function getToken() {
   const newHeaders = new Headers();
   newHeaders.append('Content-Type', 'application/x-www-form-urlencoded')
@@ -19,6 +19,7 @@ async function getToken() {
   
   await resolve.json()
     .then((result) => {
+      console.log(result)
       token = result.access_token
     });
 }
@@ -245,7 +246,6 @@ document.querySelector('.title').addEventListener('click', reloadPage);
 function reloadPage() {
   location.reload()
 }
-
 
 window.onload = async () => {
   await getToken();
