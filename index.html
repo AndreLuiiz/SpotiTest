@@ -16,34 +16,47 @@
 </head>
 
 <body>
-  <header> 
-    <img src="./images/Simbolo-Spotify-removebg-preview (1).png" alt="Logo do Spotify" width="75px">
-    <h1 class="">SpotiTest</h1>
+  <header > 
+    <div class="title">
+      <img src="./images/Simbolo-Spotify-removebg-preview (1).png" alt="Logo do Spotify" width="75px">
+      <h1 class="">SpotiTest</h1>
+    </div>
+
+    <div class="audio-player">
+      <audio class="audio"></audio>
+    </div>
   </header>
 
   <main>
+   
+    <div class="search">
+      <input  class="input search" type="search" id="music-search"
+      placeholder="Procure uma música..">
+      <button class="search button">Search</button>
+    </div>
+   
     <section class="parts">
-      <section class="part">
+
+      <section class="part" >
         <h2>Escolha o gênero</h2>
-        <section class="genres-cards">
+        <section class="genres-cards cards-with-images">
         </section>
       </section>
+
       <section class="part">
         <h2>Escolha a playlist</h2>
-        <section class="playlist-cards">
-          <div class="text-card">
-            <p>Happier Then Ever</p>
-          </div>
+        <section class="playlist-cards cards-with-images">
         </section>
       </section>
+
       <section class="part">
         <h2>Escolha a música</h2>
         <section class="music-cards">
-          <div class="text-card">
-            <p>Happier Then Ever</p>
+          <div class="text-cards">
           </div>
         </section>
       </section>
+
     </section>
   </main>
   

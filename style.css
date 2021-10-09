@@ -26,7 +26,33 @@ h1 {
 
 header {
   display: flex;
+  justify-content: space-between;
+}
+
+.search {
+  text-align: center;
+  padding: 3px;
+  margin-bottom: 40px;
+  border-radius: 6px;
+  font-family: Montserrat, sans-serif;
+  border: 0px;
+
+}
+
+button {
+  background-color: var(--verde-spotify);
+  margin-left: 8px;
+}
+
+.title {
+  display: flex;
   padding: 30px 40px;
+}
+
+audio {
+  width: 250px;
+  height: 40px;
+  margin: 30px 40px;
 }
 
 main .parts {
@@ -46,14 +72,18 @@ main .parts .part {
   align-self: center;
 }
 
-.genres-cards {
+.part h2{
+  color: var(--verde-spotify);
+}
+
+.cards-with-images {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
 
-.genres-cards .genre {
+.cards-with-images .card {
   background-color: var(--cinza3);
   padding: 10px;
   display: flex;
@@ -62,13 +92,14 @@ main .parts .part {
   margin: 15px;
   cursor: pointer;
   transition: 0.2s;
+  width: 136px;
 }
 
-.genres-cards .genre:hover{
+.card:hover{
   background-color: var(--cinza2);
 }
 
-.genres-cards .genre img {
+.card img {
   width: 100px;
   margin-bottom: 20px;
 }
@@ -82,16 +113,21 @@ main .parts .part {
 .music-cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+
+}
+
+.text-cards {
+  text-align: center;
 }
 
 .text-card{
   background-color: var(--cinza2);
   border-radius: 30px;
   padding: 10px;
-  margin: 3px;
+  margin: 8px;
   cursor: pointer;
   transition: 0.2s;
+  display: inline-block;
 }
 
 .text-card:hover {
@@ -100,6 +136,23 @@ main .parts .part {
 }
 
 .genre-selected {
-  background-color: var(--cinza1) !important;
+  background-color: var(--verde-spotify) !important;
+  color: var(--cinza1);
   border: 2px solid var(--cinza2);
+}
+
+.playlist-selected {
+  background-color: var(--verde-spotify) !important;
+  color: var(--cinza2);
+}
+
+.track-selected {
+  background-color: var(--verde-spotify) !important;
+  color: var(--cinza2);
+}
+
+.search-class {
+  min-height: 200px;
+  display: flex;
+  flex-wrap: wrap;
 }
